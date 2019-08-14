@@ -1,0 +1,296 @@
+// ---------------------------------------------------
+// Modules / Navigation
+// ---------------------------------------------------
+
+
+// -----
+// body
+// ----
+.navigation {
+  width: 100%;
+  padding: 0 $spacing--medium;
+  background: $color--white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $zIndex--6;
+
+  .container {
+    width: 100%;
+    max-width: $breakpoint--fuller;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .nav__right {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
+}
+
+
+// -----
+// logo
+// ----
+.navigation .nav__logo {
+  width: $spacing--larger;
+  padding: $spacing--small 0;
+  position: relative;
+  z-index: $zIndex--6;
+}
+
+
+// -----
+// Items and buttons
+// ----
+
+// for main nav list
+
+.nav__list {
+  height: 100%;
+  width: 100%;
+  background: $color--white;
+  position: fixed;
+  top: -100%;
+  left: 0;
+  transition: top $easing--normal;
+
+  @include helper--media($breakpoint--large) {
+    height: auto;
+    width: auto;
+    padding-right: $spacing--small;
+    background: transparent;
+    position: relative;
+  }
+  .nav__list--group {
+    height: 100%;
+    width: 100%;
+
+    @include helper--media($breakpoint--large) {
+      height: auto;
+      width: auto;
+    }
+    .menu {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include helper--media($breakpoint--large) {
+        height: auto;
+        width: auto;
+        display: block;
+      }
+      ul {
+        list-style: none;
+        display: block;
+
+        li.menu-item {
+          display: block;
+          text-align: center;
+          position: relative;
+
+          @include helper--media($breakpoint--large) {
+            display: inline-block;
+          }
+          a {
+
+            &.nav--item {
+              display: block;
+              padding: $spacing--big $spacing--medium;
+              color: $color--black;
+              font-weight: $fontWeight--bold;
+              transition: opacity $easing--fast;
+
+              &:hover {
+                opacity: $opacity--medium;
+              }
+            }
+            &.button-nav {
+              display: inline-block;
+              font-weight: $fontWeight--bold;
+              margin-top: 2.05rem;
+
+              @include helper--media($breakpoint--large) {
+                margin-left: $spacing--small;
+              }
+            }
+          }
+          // for dropdown
+          ul {
+
+            @include helper--media($breakpoint--large) {
+              display: none;
+              background: $color--white;
+              position: absolute;
+              top: 100%;
+              left: 0;
+            }
+            li.menu-item {
+              width: 100%;
+              display: block;
+              text-align: center;
+
+              @include helper--media($breakpoint--large) {
+                text-align: left;
+              }
+              a {
+                padding: $spacing--tiny $spacing--medium;
+              }
+              &:last-of-type {
+
+                a {
+                  padding-bottom: $spacing--big;
+
+                  @include helper--media($breakpoint--large) {
+                    padding-bottom: $spacing--medium;
+                  }
+                }
+              }
+            }
+          }
+          &:hover {
+
+            ul {
+              display: block;
+            }
+          }
+          &:first-of-type {
+
+            a {
+              padding-bottom: $spacing--teeny;
+
+              @include helper--media($breakpoint--large) {
+                padding-bottom: $spacing--small;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &.is-open {
+    top: 0;
+
+    @include helper--media($breakpoint--large) {
+      top: auto;
+    }
+  }
+}
+
+// for contact button
+.nav__button {
+  padding-left: $spacing--small;
+  position: relative;
+  z-index: $zIndex--7;
+
+  a {
+    font-weight: $fontWeight--bold;
+    position: relative;
+
+    &:before, &:after {
+      content: "";
+      height: 100%;
+      width: 2px;
+      background: $color--black;
+      border-radius: $borderRadius--small;
+      opacity: 0;
+      position: absolute;
+      transform-origin: center;
+      top: 0;
+      left: 50%;
+      transition: opacity $easing--normal;
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+    &.is-open {
+      background: transparent;
+      border-color: transparent;
+      color: transparent;
+
+      &:before, &:after {
+        opacity: 1;
+      }
+      &:hover {
+        background: transparent;
+        opacity: $opacity--medium;
+      }
+    }
+  }
+}
+
+
+// -----
+// hamburger and mobile
+// ----
+
+.navigation__hamburger {
+  margin-right: $spacing--small;
+  display: block;
+  position: relative;
+  z-index: $zIndex--6;
+
+  @include helper--media($breakpoint--large) {
+    display: none;
+  }
+  .navigation__hamburger--link {
+    position: relative;
+    cursor: pointer;
+
+    .navigation__hamburger--text {
+      font-weight: $fontWeight--bold;
+    }
+    //hover on button
+    &:hover {
+
+      .navigation__hamburger--text {
+
+      }
+    }
+    &:focus {
+      outline: none;
+    }
+    //open styles
+    &:before, &:after {
+      content: "";
+      height: 100%;
+      width: 2px;
+      background: $color--black;
+      border-radius: $borderRadius--small;
+      opacity: 0;
+      position: absolute;
+      transform-origin: center;
+      top: 0;
+      left: 50%;
+      transition: opacity $easing--normal;
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+    &.is-open {
+      background: transparent;
+      border-color: transparent;
+      color: transparent;
+
+      &:before, &:after {
+        opacity: 1;
+      }
+      &:hover {
+        background: transparent;
+        opacity: $opacity--medium;
+      }
+    }
+  }
+}

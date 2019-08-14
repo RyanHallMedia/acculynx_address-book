@@ -1,0 +1,47 @@
+// ---------------------------------------------------
+// Base / Layout
+// ---------------------------------------------------
+
+// -----
+// Box model
+// -----
+
+html {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+// -----
+// Base style overrides
+// -----
+
+figure {
+  margin: 0;
+}
+
+.photo__poster {
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+svg {
+  width: 100%;
+  display: block;
+}
+
+address {
+  font-style: normal;
+}

@@ -1,0 +1,57 @@
+// ---------------------------------------------------
+// Modules / Footer
+// ---------------------------------------------------
+
+.footer {
+
+  @include helper--media($breakpoint--medium) {
+
+  }
+  .container {
+
+  }
+  .footer__section  {
+
+    a.footer__section--logo {
+
+      svg {
+        width: $spacing--huger;
+        padding: $spacing--small 0;
+      }
+    }
+    p {
+
+    }
+    a.button--infotext {
+
+    }
+    .footer__section--linkgroup {
+
+      a.button--text {
+
+      }
+    }
+    &.footer--info {
+
+    }
+    &.footer--sitemap {
+
+    }
+    &.footer--social {
+
+      a {
+        display: block;
+
+        img {
+          width: 2rem;
+        }
+      }
+    }
+    &.footer--sub {
+
+      .newsletter-form {
+
+      }
+    }
+  }
+}

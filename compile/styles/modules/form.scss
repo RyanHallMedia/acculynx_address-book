@@ -1,0 +1,323 @@
+// ---------------------------------------------------
+// Modules / Form
+// ---------------------------------------------------
+
+.thanks {
+  display: none;
+}
+
+// I always use the same dang form styles so here you go
+
+//
+// /* styles for contact form */
+// .form__group {
+//   display: flex;
+//   flex-flow: row wrap;
+//   justify-content: space-between;
+//   padding: $spacing--small;
+//
+//   @include helper--media($breakpoint--small) {
+//     padding: $spacing--medium;
+//   }
+//   // underline and placeholder move and input
+//   .input__group {
+//     position: relative;
+//     margin-bottom: $spacing--largeish;
+//   }
+//   .input__group--short {
+//     width: 100%;
+//
+//     @include helper--media($breakpoint--small) {
+//       width: 48%;
+//     }
+//   }
+//   .input__group--long {
+//     width: 100%;
+//   }
+//   input.form-item {
+//   	display: block;
+//   	width: 100%;
+//     padding: $spacing--tiny;
+//   	background: transparent;
+//     border: none;
+//     border-bottom: 3px solid $color--midgray;
+//   	color: $color--black;
+//     font-size: $fontSize--body;
+//   }
+//   input.form-item.nogood {
+//     border-bottom: 3px solid red;
+//   }
+//   input.form-item:focus {
+//   	 outline: none;
+//    }
+//
+//   /* LABEL ======================================= */
+//   label.label {
+//     color: $color--midgray;
+//     font-size: $fontSize--body;
+//     text-transform: uppercase;
+//     font-weight: $fontWeight--semi;
+//     pointer-events: none;
+//     position: absolute;
+//     left: 2px;
+//     top: 10px;
+//     transition: 0.2s ease all;
+//   }
+//   span.label {
+//     width: 100%;
+//     display: inline-block;
+//     color: $color--midgray;
+//     font-size: $fontSize--body;
+//     text-transform: uppercase;
+//     font-weight: $fontWeight--semi;
+//   }
+//   /* Change the yellow to any color ;) */
+//   .form__group input:-webkit-autofill,
+//   .form__group input:-webkit-autofill:hover,
+//   .form__group input:-webkit-autofill:focus,
+//   .form__group input:-webkit-autofill:active {
+//       transition: background-color 5000s ease-in-out 0s;
+//   		-webkit-text-fill-color: $color--white !important;
+//   }
+//
+//   /* active state */
+//   input.form-item:focus ~ label.label, input.form-item:valid ~ label.label, label.label.has-value {
+//     top: -15px;
+//     font-size: 14px;
+//     color: $color--blue;
+//   }
+//
+//   /* BOTTOM BARS ================================= */
+//   .bar {
+//     width:100%;
+//     position:relative;
+//     display:block;
+//   }
+//   .bar:before, .bar:after 	{
+//     content:'';
+//     height: 3px;
+//     width: 0;
+//     position: absolute;
+//     bottom: 0px;
+//     background: $color--blue;
+//     transition: 0.2s ease all;
+//   }
+//   .bar:before {
+//     left: 50%;
+//   }
+//   .bar:after {
+//     right: 50%;
+//   }
+//
+//   /* active state */
+//   input.form-item:focus ~ .bar:before, input.form-item:focus ~ .bar:after {
+//     width: 50%;
+//   }
+//
+//   /* HIGHLIGHTER ================================== */
+//   .highlight {
+//     position:absolute;
+//     height: 60%;
+//     width: 100px;
+//     top: 25%;
+//     left: 0;
+//     pointer-events: none;
+//     opacity: 0.5;
+//   }
+//
+//   /* active state */
+//   input.form-item:focus ~ .highlight {
+//     animation:inputHighlighter 0.3s ease;
+//   }
+//   textarea.form-item {
+//     resize: none;
+//     display: block;
+//     width: 100%;
+//     padding: $spacing--tiny;
+//     background: transparent;
+//     border: none;
+//     border-bottom: 3px solid $color--midgray;
+//     border-radius: 1px;
+//     box-shadow: 0 0 0 transparent;
+//     color: $color--black;
+//     font-size: $fontSize--body;
+//   }
+//   /* active state */
+//   textarea.form-item:focus ~ .bar:before, textarea.form-item:focus ~ .bar:after {
+//     width: 50%;
+//   }
+//
+//   /* active state */
+//   textarea.form-item:focus ~ label.label, textarea.form-item:valid ~ label.label, label.label.has-value {
+//     top: -15px;
+//     font-size: 14px;
+//     color: $color--blue;
+//   }
+//   textarea.form-item:focus {
+//     outline: none;
+//   }
+//   textarea.form-item:focus ~ .highlight {
+//     animation:inputHighlighter 0.3s ease;
+//   }
+//
+//   /* ANIMATIONS ================ */
+//   @-webkit-keyframes inputHighlighter {
+//   	from { background: $color--blue; }
+//     to 	{ width:0; background:transparent; }
+//   }
+//   @-moz-keyframes inputHighlighter {
+//   	from { background: $color--blue; }
+//     to 	{ width:0; background:transparent; }
+//   }
+//   @keyframes inputHighlighter {
+//   	from { background: $color--blue; }
+//     to 	{ width:0; background:transparent; }
+//   }
+// }
+//
+// .spacer {
+//   width: 100%;
+//   height: 3px;
+//   margin-bottom: $spacing--biger;
+//   position: relative;
+//
+//   &:after {
+//     content: "";
+//     height: 3px;
+//     width: $spacing--huger;
+//     background: $color--lightgray;
+//     border-radius: 2px;
+//     opacity: $opacity--medium;
+//     position: absolute;
+//     top: 0;
+//     left: 50%;
+//     transform: translateX(-50%);
+//   }
+// }
+//
+// .input__group--check, .input__group--radio {
+//
+//   span.label {
+//     top: -0.5rem!important;
+//     position: relative;
+//   }
+// }
+// .form--center {
+//   width: 100%;
+//   display: flex;
+//   flex-flow: column;
+//   align-items: center;
+// }
+// .rangeslider-wrap {
+//   margin-top: $spacing--bigish;
+//   max-width: 25rem;
+//
+//   label {
+//     top: -$spacing--biger!important;
+//   }
+//   .rangeslider {
+//     height: $spacing--teeny;
+//     background: $color--midgray;
+//     border-radius: 1px;
+//     box-shadow: none;
+//   }
+//   .rangeslider__handle {
+//     top: -$spacing--small;
+//     background: $color--black;
+//     background-image: none;
+//     border: none;
+//     box-shadow: $shadow--small;
+//     text-align: center;
+//
+//     .rangeslider__handle__value {
+//       position: relative;
+//       top: $spacing--biger;
+//       right: $spacing--teeny;
+//     }
+//   }
+//   .rangeslider__fill {
+//     background: $color--black;
+//     border-radius: 1px;
+//     box-shadow: none;
+//   }
+// }
+//
+//
+// .form--button {
+//   margin: 4px;
+//   float:left;
+//   overflow:hidden;
+// }
+// .form--button label span {
+//   width: 8rem;
+//   padding: $spacing--tiny $spacing--small;
+//   display:block;
+//   background: $color--white;
+//   border: 1px solid $color--midgray;
+//   border-radius: 1px;
+//   text-align:center;
+//
+//   @include helper--media($breakpoint--small) {
+//     padding: $spacing--tiny $spacing--tiny;
+//   }
+//   &:hover {
+//     background: rgba($color--black, $opacity--tiny);
+//     border: 1px solid $color--black;
+//     color: $color--white;
+//     cursor: pointer;
+//   }
+// }
+// .form--button label input {
+//   position:absolute;
+//   top:-20px;
+//   visibility: hidden;
+// }
+// .form--button input:checked + span {
+//   background: $color--black;
+//   border: 1px solid $color--black;
+//   color: $color--white;
+// }
+//
+// .submitbutton {
+//   width: 100%;
+//   padding: $spacing--medium 0;
+//   text-align: center;
+// }
+// .form__group--thankyou {
+//   display: none;
+//   height: 100vh;
+// }
+// .parsley-errors-list {
+//   display: none;
+// }
+// .form__group .form-item.parsley-error {
+//   border-bottom: 3px solid red;
+// }
+
+
+.contactForm {
+  height: 100%;
+  width: 100%;
+  background: $color--blue;
+  position: fixed;
+  z-index: $zIndex--7;
+  top: -100%;
+  left: 0;
+  transition: top $easing--normal;
+
+  .topbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    a.button-nav {
+      display: inline-block;
+      font-weight: $fontWeight--bold;
+      margin-top: 2.05rem;
+      margin-right: 2.05rem;
+    }
+  }
+  &.is-open {
+    top: 0;
+  }
+}

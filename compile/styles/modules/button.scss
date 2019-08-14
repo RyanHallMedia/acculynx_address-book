@@ -1,0 +1,48 @@
+// ---------------------------------------------------
+// Modules / Button
+// ---------------------------------------------------
+
+.button {
+  padding: $spacing--micro $spacing--small;
+  background: $color--white;
+  border: $borderWidth--normal solid $color--blue;
+  border-radius: $borderRadius--medium;
+  color: $color--blue;
+  transition: $easing--normal all;
+
+  &.black {
+    color: $color--black;
+    border-color: $color--black;
+  }
+  &:hover {
+    background: $color--blue;
+    color: $color--white;
+
+    &.black {
+      background: $color--black;
+    }
+  }
+  &.button--text {
+
+  }
+  &.button--border {
+
+  }
+  &.button--filled {
+
+  }
+}
+
+//owl nav buttons
+.owl-nav {
+
+  @include helper--media($breakpoint--medium) {
+
+  }
+  .owl-prev, .owl-next {
+
+    &.disabled {
+      color: $color--gray;
+    }
+  }
+}

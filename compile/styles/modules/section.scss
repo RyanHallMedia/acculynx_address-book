@@ -1,0 +1,19 @@
+// ---------------------------------------------------
+// Modules / Section
+// ---------------------------------------------------
+
+.section {
+  position: relative;
+
+  @include helper--media($breakpoint--medium) {
+
+  }
+  .container {
+    max-width: $breakpoint--full;
+    margin: 0 auto;
+  }
+  .container--tight {
+    max-width: $breakpoint--large;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,21 @@
+// ---------------------------------------------------
+// Modules / Hero
+// ---------------------------------------------------
+
+.hero {
+
+  @include helper--media($breakpoint--medium) {
+
+  }
+  &.hero--tall {
+
+  }
+  &.hero--short {
+
+  }
+}
+
+// animation styles
+.hero--tall.animateit {
+
+}

@@ -1,0 +1,10 @@
+// ---------------------------------------------------
+// Modules / Content (for blog-like pages)
+// ---------------------------------------------------
+
+.content {
+
+  @include helper--media($breakpoint--medium) {
+
+  }
+}

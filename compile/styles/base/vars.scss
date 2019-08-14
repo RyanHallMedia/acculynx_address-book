@@ -1,0 +1,175 @@
+// ---------------------------------------------------
+// Base / Helpers
+// ---------------------------------------------------
+
+// -----
+// Colors
+// -----
+
+$color--blue:       #06B4CA;
+$color--greencat:   #27b573;
+$color--redcat:     #f79b85;
+$color--bluecat:    #11b5c9;
+$color--red:        #ffffff;
+$color--black:      #213642;
+$color--darkgray:   #6b6b6b;
+$color--gray:       #EDEDED;
+$color--midgray:    #CDCDCD;
+$color--lightgray:  #f7f7f7;
+$color--white:      #FFFFFF;
+
+// -----
+// Fonts
+// -----
+
+$font--title:  'Montserrat', 'helvetica neu', helvetica, arial, sans-serif;
+$font--copy:   'Montserrat', 'helvetica neu', helvetica, arial, sans-serif;
+
+// -----
+// Font Sizes
+// -----
+
+$fontSize--h1:      3.125rem;   //50px
+$fontSize--h2:      2.8125rem;  //45px
+$fontSize--h3:      1.875rem;   //30px
+$fontSize--h4:      1.0625;     //17px
+$fontSize--h5:      0.9375rem;  //15px
+$fontSize--h6:      0.75rem;    //12px
+$fontSize--body:    0.9375rem;  //15px
+
+
+// -----
+// Line Heights
+// -----
+
+$lineHeight--base:   100%;
+$lineHeight--small:  115%;
+$lineHeight--medium: 135%;
+$lineHeight--large:  175%;
+$lineHeight--huge:   250%;
+
+// -----
+// Letter Spacing
+// -----
+
+$letterSpacing--tiny:   .03rem;
+$letterSpacing--small:  .05rem;
+$letterSpacing--medium: .1rem;
+
+// -----
+// Font Weights
+// -----
+
+$fontWeight--bold:     800;
+$fontWeight--semi:     600;
+$fontWeight--regular:  400;
+
+// -----
+// Spacing
+// -----
+
+$spacing--micro:     .25rem;
+$spacing--teeny:     .5rem;
+$spacing--tiny:      .75rem;
+$spacing--small:     1rem;
+$spacing--medium:    1.7rem;
+$spacing--bigish:    2rem;
+$spacing--big:       2.5rem;
+$spacing--biger:     3rem;
+$spacing--largeish:  4rem;
+$spacing--large:     5rem;
+$spacing--larger:    6rem;
+$spacing--huge:      7rem;
+$spacing--huger:     10rem;
+$spacing--mega:      14rem;
+
+// -----
+// Opacity
+// -----
+
+$opacity--teeny:  .95;
+$opacity--tiny:   .85;
+$opacity--small:  .75;
+$opacity--medium: .65;
+$opacity--bigish: .45;
+$opacity--big:    .35;
+$opacity--large:  .15;
+$opacity--huge:   .05;
+
+// -----
+// shadow
+// -----
+
+$shadow--small:   0 4px 15px rgba($color--black, 0.05);
+$shadow--medium:  0 4px 15px rgba($color--black, 0.15);
+$shadow--large:   0 4px 25px rgba($color--black, 0.15);
+
+// -----
+// Border
+// -----
+
+$borderWidth--small:  1px;
+$borderWidth--normal: 2px;
+$borderWidth--medium: 3px;
+$borderWidth--large:  4px;
+
+// -----
+// Border Radius
+// -----
+
+$borderRadius--small:  1px;
+$borderRadius--medium: 2rem;
+$borderRadius--large:  4px;
+
+// -----
+// Breakpoints
+// -----
+
+$breakpoint--max:    2000px;
+$breakpoint--huge:   1600px;
+$breakpoint--fuller: 1350px;
+$breakpoint--full:   1250px; //  78rem
+$breakpoint--large:  950px;  //  56.25rem
+$breakpoint--medium: 768px;  //  48rem
+$breakpoint--small:  650px;  //  37.5rem
+$breakpoint--tiny:   450px;  //  30rem
+$breakpoint--teeny:  376px;  //  20rem
+
+// -----
+// Z-Indexes
+// -----
+
+$zIndex--0:  0;
+$zIndex--1:  100;
+$zIndex--2:  200;
+$zIndex--3:  300;
+$zIndex--4:  400;
+$zIndex--5:  500;
+$zIndex--6:  600;
+$zIndex--7:  700;
+
+// -----
+// Easing
+// -----
+
+$easing--fast:     .15s ease;
+$easing--normal:   .2s ease;
+$easing--slow:     .5s ease;
+$easing--verySlow: 1s ease;
+
+// -----
+// Columns
+// -----
+
+$column--1:  100% * (1 / 12);
+$column--2:  100% * (2 / 12);
+$column--3:  100% * (3 / 12);
+$column--4:  100% * (4 / 12);
+$column--5:  100% * (5 / 12);
+$column--6:  100% * (6 / 12);
+$column--7:  100% * (7 / 12);
+$column--8:  100% * (8 / 12);
+$column--9:  100% * (9 / 12);
+$column--10: 100% * (10 / 12);
+$column--11: 100% * (11 / 12);
+$column--12: 100% * (12 / 12);

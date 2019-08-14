@@ -1,0 +1,15 @@
+// ---------------------------------------------------
+// Modules / Photos
+// ---------------------------------------------------
+
+.photos {
+  height: 0;
+  width: 100%;
+  background-size: 100%;
+  overflow: hidden;
+  display: block;
+
+  img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,32 @@
+// ---------------------------------------------------
+// Base / Helpers
+// ---------------------------------------------------
+
+@mixin helper--media($min-width) {
+  @media(min-width: $min-width) { @content; }
+}
+
+@mixin helper--clearfix {
+  overflow: hidden;
+
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin helper--placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+}

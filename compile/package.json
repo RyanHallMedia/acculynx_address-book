@@ -1,0 +1,32 @@
+{
+  "name": "starter-project",
+  "author": "ryanhallmedia",
+  "description": "Ryan Hall Media",
+  "version": "0.0.1",
+  "homepage": "http://ryanhallmedia.com",
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:RyanHallMedia/craft-rhm.git"
+  },
+  "private": true,
+  "devDependencies": {
+    "chalk": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-babel": "^5.1.0",
+    "gulp-cache": "*",
+    "gulp-clean-css": "^2.0.6",
+    "gulp-concat": "^2.5.2",
+    "gulp-concat-util": "*",
+    "gulp-jsvalidate": "*",
+    "gulp-livereload": "*",
+    "gulp-notify": "*",
+    "gulp-plumber": "^0.6.6",
+    "gulp-rename": "*",
+    "gulp-sass": "*",
+    "gulp-size": "^1.1.0",
+    "gulp-strip-debug": "^1.0.2",
+    "gulp-uglify": "*",
+    "gulp-util": "*"
+  }
+}

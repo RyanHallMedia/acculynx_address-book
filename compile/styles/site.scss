@@ -1,0 +1,48 @@
+
+/*  Example Project,
+    Design By Cosmic 2016 */
+
+// ---------------------------------------------------
+//  This is the master import file for the SCSS stylesheets.
+//  Please preserve the order of vendor, base, includes, and modules.
+// ---------------------------------------------------
+
+
+// -----
+// Vendors
+// -----
+
+@import 'vendor/normalize/normalize';
+@import 'vendor/animate/animate';
+
+// -----
+// Base
+// -----
+
+@import 'base/vars';
+@import 'base/embeds';
+@import 'base/helpers';
+@import 'base/base';
+@import 'base/type';
+
+// -----
+// Atoms
+// -----
+
+@import 'atoms/row';
+
+// -----
+// Modules
+// -----
+
+@import 'modules/navigation';
+@import 'modules/hero';
+@import 'modules/section';
+@import 'modules/content';
+@import 'modules/page';
+@import 'modules/form';
+@import 'modules/cards';
+@import 'modules/block';
+@import 'modules/photos';
+@import 'modules/button';
+@import 'modules/footer';
