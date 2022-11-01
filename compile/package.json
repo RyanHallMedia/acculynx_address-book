@@ -13,7 +13,7 @@
     "chalk": "*",
     "gulp": "*",
     "gulp-autoprefixer": "*",
-    "gulp-babel": "^5.1.0",
+    "gulp-babel": "^8.0.0",
     "gulp-cache": "*",
     "gulp-clean-css": "^2.0.6",
     "gulp-concat": "^2.5.2",
